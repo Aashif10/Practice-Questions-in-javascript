@@ -68,7 +68,6 @@
 //   { department: "IT", average: { ia } }
 // ];
 
-
 // console.log(op)
 // let Output = op.filter(val => {
 //   if (val.average.ha > 65000) {
@@ -107,8 +106,6 @@
 // })
 // console.log(newArray)
 
-
-
 // ! 3 Question
 // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // let newArray = array.filter((value) => {
@@ -121,7 +118,7 @@
 
 // let newArray = array.reduce((acc, value) => {
 //     return acc + value;
-    
+
 // }, 0)
 // console.log("Sum of all number:",newArray)
 
@@ -313,20 +310,154 @@
 // console.log(newArray)
 // let result = newArray.join("");
 // console.log(result)
-function Palindrome(number) {
-    let temporay = number;
+// ! Check Palindrome Numbeer
+// function Palindrome(number) {
+//     let temporay = number;
 
-    let reverse = 0;
+//     let reverse = 0;
 
-    while (number > 0) {
-        let digit = number % 10;
-        reverse = (reverse * 10) + digit;
-        number = Math.floor(number / 10);
-    }
-    if (reverse === temporay) {
-        console.log("Number is Palindrome:", reverse);
-    } else {
-        console.log("Number is not Palindrome:", reverse);
-    }
-}
-Palindrome(1321)
+//     while (number > 0) {
+//         let digit = number % 10;
+//         reverse = (reverse * 10) + digit;
+//         number = Math.floor(number / 10);
+//     }
+//     if (reverse === temporay) {
+//         console.log("Number is Palindrome:", reverse);
+//     } else {
+//         console.log("Number is not Palindrome:", reverse);
+//     }
+// }
+// Palindrome(1321)
+
+//! Find Missing Number in array
+
+// let SumOfNatural = 0;
+// let arraySum = 0;
+// function findMissing(arr) {
+//     let n = arr.length;
+//      SumOfNatural = (n * (n + 1)) / 2;
+//     for (let i = 0; i < n; i++){
+//         arraySum += arr[i];
+//     }
+//     return arraySum-SumOfNatural;
+// }
+// let array = [1,3,4,5];
+// let result = findMissing(array);
+// console.log("Missing Number is:", result)
+
+// function Greet(name, callback) {
+//     console.log("Name:", name)
+//     callback();
+// }
+
+// function SayHi() {
+//     console.log("Hi Javascript")
+// }
+
+// Greet("Aashif",SayHi)
+
+// let arr = new Array()
+// arr = [20, 30, 40, 50];
+// console.log(arr)
+
+// let fruits = ["Apple", "Banana", "pineApple"]
+// fruits.forEach((item,index) => {
+//     console.log(`Index ${index}: ${item}`)
+// })
+
+// let users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 28 }
+// ];
+
+// users.forEach((item) => {
+//     if (item.name === "Bob") {
+
+//         item.age += 1;
+//     }
+// })
+// console.log(users)
+
+// let users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 31 },
+//   { name: "Charlie", age: 28 }
+// ];
+
+// users.forEach((item) => {
+//     if (item.age >= 25 &&item.age<30 ) {
+//         item.name="Aashif"
+//     }
+// })
+// console.log(users)
+
+// let arr = [10, 20, 30, 40, 50];
+
+// for (let item of arr) {
+//   if (item % 6 === 0) {
+//     console.log(item);
+//   }
+// }
+
+// let name = "aashif,upkar,amir,sheetal";
+// let array = name.split(",")
+// let output = array.map((item) => ({ name: item }));
+// console.log(output)
+
+// let users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 31 },
+//   { name: "Charlie", age: 28 }
+// ];
+
+// users.map((item) => {
+//     if (item.name === "Bob") {
+//         item.age+=2
+//     }
+// })
+// console.log(users)
+
+// let object = { name: "aashif", age: 33 }
+// let newobj = object;
+// newobj.age = 23;
+// console.log(object) //23
+// console.log(newobj)  //23
+
+// let object = { name: "aashif", age: 33 }
+// let newObj = {};
+
+// for (let element in object) {
+//     newObj[element] = object[element]
+// }
+
+// newObj.age = 44;
+// newObj.name="abc"
+// console.log(object)
+// console.log(newObj)
+
+// let arr = new Array(5);//size
+// for (let i = 0; i < arr.length; i++){
+//     if (i == 1 || i==3) {
+//         arr[i]=5
+//     }
+// }
+// console.log(arr)
+
+// const fetch = require('node-fetch'); // Install via: npm install node-fetch
+
+// async function fetchData() {
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+//         const data = await response.json();
+//         console.log("Fetched Data:", data);
+//     } catch (err) {
+//         console.error("Error fetching data:", err);
+//     }
+// }
+
+// fetchData();
+
+// console.log([]+[])
+
+// 
