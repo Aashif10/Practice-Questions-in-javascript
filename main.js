@@ -1,4 +1,3 @@
-
 // for (let i = 5; i <= 1; i++){
 //     let row = '';
 //     for (let j = i; j >=1; j--){
@@ -12,22 +11,22 @@
 //     for (let j = i + 1; j < array.length; j++)
 //     {
 //         if (array[i]== array[j]) {
-            
+
 //             console.log("Duplicate Number:",array[j]);
 //         }
-        
+
 //     }
 // }
 
 // let array = [10,20,30,40,50];
 // let max =0;
 // for (let i = 0; i < array.length; i++){
-    //     if (array[i] > max) {
-        //         max = array[i];
-        //     }
-        // }
-        // console.log("Largest Number:", max)
-        
+//     if (array[i] > max) {
+//         max = array[i];
+//     }
+// }
+// console.log("Largest Number:", max)
+
 // let array = [10, 20, 30, 40, 45,55];
 // let max = 0;
 // let secondMax = 0;
@@ -38,12 +37,11 @@
 //         }
 //         else if (array[i] > secondMax && array[i] !== max) {
 //             secondMax= array[i];
-        
+
 //     }
 // }
 // console.log("Maximum:", max);
 // console.log("SecondMax:", secondMax);
-
 
 // let a = 40;
 // let b = 30;
@@ -77,7 +75,7 @@
 //         console.log("Number is not first prime")
 //         return;
 //     }
-    
+
 //     for (let i = 0; i < Math.floor(number) / 2; i++){
 //         if (number % 2 === 0) {
 //             console.log("number is not Prime");
@@ -125,12 +123,11 @@
 // let new_arr=arr.splice(1, 3);
 // console.log(new_arr);
 
-
 // let arr = [10, 21, 30, 40, 50];
 // arr.forEach((item) => {
-    //         console.log(item)
-    //     })
-    
+//         console.log(item)
+//     })
+
 // let arr = [10, 21, 30, 40, 50];
 // let Array=arr.map((value) => value * 5)
 //     console.log(Array)
@@ -139,12 +136,10 @@
 // let array = arr.filter((item) => {
 //     if (item > 30)
 //         return true;
-    
+
 // })
 
 // console.log(array)
-
-
 
 // let arr = [10, 21, 30, 40, 50];
 // let array = arr.reduce((acc, value)=> {
@@ -191,7 +186,7 @@
 //     console.log(c)
 //     console.log(this.name)
 //     console.log(this.age)
-    
+
 // }
 // let result = call.bind(object, 10, 20, 30, 40)
 // result()
@@ -202,14 +197,14 @@
 // };
 // let array=[10,20,30,40,50]
 // function details([a,b,c]) {
-    //     console.log(a)
-    //     console.log(b)
-    // }
-    // details(array)
-    // function fun(a, b,...rest) {
-    //     console.log(a)
-    //     console.log(b)
-    // }
+//     console.log(a)
+//     console.log(b)
+// }
+// details(array)
+// function fun(a, b,...rest) {
+//     console.log(a)
+//     console.log(b)
+// }
 // fun(10, 20, 30, 40, 50);
 // let array = [10, 20, 30, 40, 50];
 // function details(a,b,c) {
@@ -218,5 +213,3 @@
 //     console.log(c)
 // }
 // details(...array)
-
-// let array = [QA

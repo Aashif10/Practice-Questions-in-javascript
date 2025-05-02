@@ -1,10 +1,10 @@
 //* 1. Questions
-var show = 1;
-console.log(show);
-function show() {
-  console.log("🧑🏿‍🎄");
-}
-console.log(show); //1 ,1
+// var show = 1;
+// console.log(show);
+// function show() {
+//   console.log("🧑🏿‍🎄");
+// }
+// console.log(show()); //1 ,1
 
 //* 2. Questions
 // let array=[3,5,3,2,8,6,9,11,1]

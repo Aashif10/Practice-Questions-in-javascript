@@ -1,4 +1,4 @@
-// ******************************* Bubble Sort **************************************
+//*1****************************** Bubble Sort **************************************
 // function BubbleSort(array) {
 //   for (let i = 0; i < array.length - 1; i++) {
 //     for (let j = 0; j <= array.length - i - 1; j++) {
@@ -14,7 +14,7 @@
 // let array = [2, 4, 1, 5, 3, 6, 8, 7, 10, 9];
 // const result = BubbleSort(array)
 // console.log(result);
-// ******************************* find Target char **************************************
+// *2****************************** find Target char **************************************
 
 // function TargetChar(str, target) {
 //     let count = 0;
@@ -28,7 +28,7 @@
 // const result = TargetChar("aabbbbccaa", "c")
 // console.log(result)
 
-// ******************************* Occuring char **************************************
+// *3****************************** Occuring char **************************************
 
 // function Occured(str) {
 //     let count = {};
@@ -42,7 +42,7 @@
 // const result = Occured(str);
 // console.log(result)
 
-// ******************************* Two Sum **************************************
+// *4****************************** Two Sum **************************************
 
 // function TwoSum(array, target) {
 //   for (let i = 0; i < array.length; i++) {
@@ -59,7 +59,7 @@
 // const result = TwoSum(array, target);
 // console.log(result);
 
-// ******************************* Two Sum **************************************
+// *5****************************** Two Sum **************************************
 
 // var twoSum = function(numbers, target) {
 //   for (let i = 1; i < numbers.length; i++) {
@@ -75,7 +75,7 @@
 // const target = 9;
 // const result = twoSum(numbers, target);
 // console.log(result);
-// ******************************* Two Sum **************************************
+// *6****************************** Two Sum **************************************
 
 // function twoSum(numbers, target) {
 //     let left = 0, right = numbers.length - 1;
@@ -96,7 +96,7 @@
 // const numbers = [2, 7, 11, 15];
 // const target = 9;
 // console.log(twoSum(numbers, target)); // Output: [1, 2]
-// ******************************* Maximum **************************************
+// *7****************************** Maximum **************************************
 
 // function Maximum(array) {
 //     let Max = 0;
@@ -110,7 +110,7 @@
 // const array = [1, 2, 3,11, 5];
 // const result = Maximum(array)
 // console.log(result)
-// ******************************* Minimum **************************************
+// **8***************************** Minimum **************************************
 
 // function Minimum(array) {
 //     let Min = array[0];
@@ -125,7 +125,7 @@
 // const array = [9, 2, 5, 11, 7, 3];
 // const result = Minimum(array)
 // console.log("Minimum:",result);
-// ******************************* Second Maximum Number  **************************************
+// **9***************************** Second Maximum Number  **************************************
 
 // function SecondMax(array) {
 //     let Max = 0;
@@ -144,7 +144,7 @@
 // const array = [1, 2, 3, 45];
 // const result = SecondMax(array);
 // console.log(result)
-// ******************************* Second Minimum **************************************
+// *10****************************** Second Minimum **************************************
 
 // function SecondMinimum(array) {
 //   let min = array[0];
@@ -161,9 +161,9 @@
 // }
 
 // let array = [45, 22, 41];
-// const result = SecondMinimum(array)
-// console.log(result)
-// *******************************  **************************************
+// const result = SecondMinimum(array);
+// console.log(result);
+// *11******************************  **************************************
 
 // let arr = {
 //   name:  "aashif",
@@ -171,13 +171,13 @@
 //    name1: "arshad"}
 // let arr1 = JSON.stringify(arr)
 // console.log(arr1)
-// *******************************  **************************************
+// *12******************************  **************************************
 
 // let arr = [0, false, "Aashif", 34, true, -1,null,undefined ,""]
 // let arr=[0,1,2,3,4,5]
 // let falsy=arr.filter((item)=>item)
 // console.log(falsy)
-// *******************************  **************************************
+// *13******************************  **************************************
 
 // let arr = [0, false, "Aashif", 34, true, -1, null, undefined, ""]
 // let truthy = [];
@@ -188,7 +188,7 @@
 // }
 // console.log(truthy)
 
-// ******************************* duplicate Remove **************************************
+// *14****************************** duplicate Remove **************************************
 
 // let arr1 = [1, 2, 3,23,3,3,4,44, 1];
 // let arr2 = [];
@@ -199,7 +199,7 @@
 // }
 // console.log(arr2);
 
-// ******************************* bubble sort **************************************
+// **15***************************** bubble sort **************************************
 // function Bubble(arr) {
 //     let n = arr.length;
 //     for (let i = 0; i < n- 1; i++){
@@ -216,20 +216,35 @@
 // let arr = [4, 3, 2, 7, 9, 1, 5, 8, 6];
 // let sorted = Bubble(arr);
 // console.log("Sorted Array:",sorted)
-// ******************************* Reverse String **************************************
+// *16****************************** Reverse String **************************************
 
 // function Reversed(str) {
-//     let Reserve = "";
-//     for (let i = str.length-1; i >= 0; i--){
-//         Reserve += str[i];
-//     }
-//     return Reserve;
+//   let Reserve = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     Reserve += str[i];
+//   }
+//   return Reserve;
 // }
 // let str = "Hello World";
 // let Reserved = Reversed(str);
-// console.log("Reversed:",Reserved);
+// console.log("Reversed:", Reserved);
+// *17************************** Reversed second word ******************
+// function reverseSecondWord(input) {
+//   let first = "",
+//     second = "",
+//     spaceFound = false;
+//     for (let i = 0; i < input.length; i++) {
+//     const char = input[i];
+//     if (char === " ") spaceFound = true;
+//     else if (!spaceFound) first += char;
+//     else second = char + second;
+//   }
+//   return first + " " + second;
+// }
 
-// **************************** Palindrome Number ************************
+// console.log(reverseSecondWord("Hello World")); // Output: "Hello dlroW"
+
+// *18*************************** Palindrome Number ************************
 // function Palindrome(digit) {
 //   let temp = digit;
 //   let sum = 0;
@@ -245,7 +260,7 @@
 //   }
 // }
 // Palindrome(12321);
-// **************************** Palindrome Number ************************
+// *19*************************** Palindrome Number ************************
 // function Str(str) {
 //     let original = "";
 //     for (let i = str.length-1; i >= 0; i--){
@@ -258,7 +273,7 @@
 //     }
 // }
 //  Str("nitin")
-// ******************************* Fibbonacci Series **************************************
+// *20****************************** Fibbonacci Series **************************************
 
 // function Fibbonacci(first, second, n) {
 //     let series = [first, second]
@@ -283,7 +298,7 @@
 // }
 // console.log(Fibbonacci(0,1,6))
 
-// ************************************ Factorial Number  *********************************************
+// *21*********************************** Factorial Number  *********************************************
 
 // function Factorial(num) {
 //     let fact = 1;
@@ -294,7 +309,7 @@
 // }
 // console.log(Factorial(5))
 
-// ***************************************** vowel and consonant  **************************************
+// *22**************************************** vowel and consonant  **************************************
 
 // let name = "aashif";
 // let vowel = "aeiouAEIOU";
@@ -311,7 +326,7 @@
 // console.log("Vowels:", vowelcount)
 // console.log("Consonant:",consonentcount)
 
-// *************************************** vowel and consonants  *************************************************
+// *23************************************** vowel and consonants  *************************************************
 
 // function Check(name) {
 //     let vowels = "aeiouAEIOU"
@@ -333,7 +348,7 @@
 // let result = Check(name);
 // console.log(result.vowelcount);
 // console.log(result.consonantcount)
-// ******************************** Merge Two Array and duplicate *********************
+// *24******************************* Merge Two Array and duplicate *********************
 // let array1 = [1, 2, 3,2,3,4];
 // let array2 = [3,3,4,5,5,4,2];
 // let array3 = [];
@@ -352,15 +367,32 @@
 
 // console.log("Merge||Sorted||DuplicateRemove:",array3);
 
-// ***********************  Armstrong *****************
+// *25********************************** find duplicate *********************
+// function duplicateArray(arr) {
+//   let newArray = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     {
+//       for (let j = i + 1; j < arr.length; j++) {
+//         if (arr[i] === arr[j]) {
+//           newArray.push(arr[i]);
+//         }
+//       }
+//     }
+//   }
+//   return newArray;
+// }
+// let arr = [1, 2, 3, 4, 5, 1, 2, 3];
+// console.log(duplicateArray(arr)); // Output: [1, 2, 3]
+
+// *25**********************  Armstrong *****************
 
 // function Armstrong(num) {
 //   let temp = num;
 //   let Arm = 0;
 //   while (num > 0) {
 //     let remain = num % 10;
-//     Arm = Arm + remain * remain * remain;
-//     num = Math.floor(num / 10)
+//     Arm = Arm + remain * remain * remain; //  153 370 371 407
+//     num = Math.floor(num / 10);
 //   }
 //   if (temp === Arm) {
 //     console.log("Number is Armstrong:", Arm);
@@ -368,8 +400,8 @@
 //     console.log("Number is not Armstrong:", temp);
 //   }
 // }
-// Armstrong(371);//153 370 371 407
-// *********************************** Sum of digit ***************************
+// Armstrong(371); //153 370 371 407
+// *26********************************** Sum of digit ***************************
 // function DigitCount(num) {
 //     let count = 0;
 //     while (num > 0) {
@@ -380,18 +412,18 @@
 //     return count;
 // }
 // console.log(DigitCount(12345))
-// ********************************* count ***********************************
+// **27******************************* count ***********************************
 // function Count(num) {
 //   let count = 0;
 //   while (num > 0) {
 //     num = Math.floor(num / 10);
 //     count++;
-//     }
-//     return count;
+//   }
+//   return count;
 // }
-// console.log(Count(47887559))
+// console.log(Count(47887559));
 
-// ***********************************
+// *28**********************************
 
 // function Swap(a, b) {
 //     a = a + b;
@@ -408,7 +440,7 @@
 // console.log("a:", a)
 // console.log("b:", b)
 
-// ************************************ Missing Number in Array **********************************
+// *29*********************************** Missing Number in Array **********************************
 
 // let array = [1,4,2];
 // let n = array.length;
@@ -419,22 +451,23 @@
 // }
 // let result = num - sum;
 // console.log(result);
-// ******************************** Find Mising multiple number ***************************
-// let array = [5, 1, 2]
+// *30******************************* Find Mising multiple number ***************************
+// let array = [5, 1, 2];
 // let max = 0;
-// for (let j = 0; j < array.length; j++){
-//     if (array[j] > max) {
-//         max = array[j];
-//     }
+// for (let j = 0; j < array.length; j++) {
+//   if (array[j] > max) {
+//     max = array[j];
+//   }
 // }
-// let misingNum = [];
-// for (let i = 0; i < max; i++){
-//     if (!array.includes(i)) {
-//         misingNum.push(i)
-//     }
-// }
-// console.log(misingNum)
 
+// let misingNum = [];
+// for (let i = 0; i < max; i++) {
+//   if (!array.includes(i)) {
+//     misingNum.push(i);
+//   }
+// }
+// console.log(misingNum);
+// *31******************************* vowel count **********
 // function Check(name) {
 //     let vowels = "aeiouAEIOU";
 //     let vowelcount = "";
@@ -470,20 +503,20 @@
 // let name = "aeiouaeioueqt";
 // let result = Check(name);
 // console.log(result);
-// ************************** Decimal to binary ***********************
+// *32************************* Decimal to binary ***********************
 
 // function Binary(num) {
 //   let binary = "";
 //   while (num > 0) {
-//     binary = num % 2+binary;
+//     binary = num % 2 + binary;
 //     num = Math.floor(num / 2);
 //   }
 //   return binary;
 // }
-// let num = 100;
+// let num = 8;
 // let result = Binary(num);
 // console.log(result);
-// ************************** Check Perfect Number ***********************
+// *33************************* Check Perfect Number ***********************
 // function Perfect(num) {
 //   let sum = 0;
 //   for (let i = 1; i <= num / 2; i++) {
@@ -498,7 +531,7 @@
 //   }
 //   return num;
 // }
-// let num = 6;
+// let num = 28;
 // let result = Perfect(num);
 // console.log(result);
 // ************************** Check Perfect Number 1 to 100 ***********************
@@ -512,7 +545,6 @@
 //         sum += j;
 //       }
 //     }
-
 //     if (sum === i) {
 //       perfectNumber.push(i);
 //     }
@@ -521,7 +553,7 @@
 // }
 // console.log(Perfect());
 
-// ************************************ check valid email************************
+//   ************************************ check valid email************************
 // function Valid(email) {
 //   let domains = ["@gmail.com", "@gmail.co"];
 //   for (let i = 0; i < domains.length; i++) {
@@ -552,33 +584,32 @@
 //       maxcount = count[char];
 //     }
 //   }
-//   return {maxchar,maxcount}
+//   return { maxchar, maxcount };
 // }
-// let str = "javascript is great language"
+// let str = "javascript is great language";
 // let result = Occured(str);
-// console.log(result)
+// console.log(result);
 
 // ********************************** Most occuring Number **************************
 // function number(num) {
 //   let numstr = num.toString();
 //   let count = {};
-//   for (let i of numstr){
+//   for (let i of numstr) {
 //     count[i] = count[i] ? count[i] + 1 : 1;
 //   }
 //   let maxcount = 0;
-//   let maxdigit = null;
-//   for (let num in count){
+//   let maxdigit = 0;
+//   for (let num in count) {
 //     if (count[num] > maxcount) {
 //       maxdigit = num;
 //       maxcount = count[num];
-//        }
-
+//     }
 //   }
-//   return {maxdigit,maxcount};
+//   return { maxdigit, maxcount };
 // }
 // let num = 11223322223333;
-// let result = number(num)
-// console.log(result)
+// let result = number(num);
+// console.log(result);
 // ******************************************** Reverse string **************
 
 // function sorted(arr) {
@@ -596,25 +627,18 @@
 
 // ************************************ Find the largest SubString *******************
 // function Longest(str) {
-//     let longest = "";
-//     let current = "";
-//     let char = "";
-//     for (let i = 0; i < str.length; i++){
-//         char = str[i];
-//         if (char === " ") {
-//             if (current.length > longest.length) {
-//                 longest = current;
-//             }
-//             current = "";
-//         } else {
-//             current += char;
-//         }
+//   let word = str.split(" ");
+//   let long = " ";
+
+//   for (let element of word) {
+//     if (element.length > long.length) {
+//       long = element;
 //     }
-//     return longest;
+//   }
+//   return long;
 // }
-//  let str=" I Love My India "
-// let result = Longest(str);
-// console.log(result);
+// let str = "i love Aashif india";
+// console.log(Longest(str));
 
 // let array = [1, 2, 3, 4];
 // array.unshift(100);
@@ -624,31 +648,31 @@
 // console.log(arr);
 
 // ************************************* Rotate Array ******************
-// function Rotate(array,time) {
-//     let n = array.length;
-//     let Rotated = []
-//     //  time = time % n;
-//     for (let i = 0; i < n; i++){
-//           Rotated[i]=array[(i+time)%n]
-//     }
-//     return Rotated;
+// function Rotate(array, time) {
+//   let n = array.length;
+//   let Rotated = [];
+//   time = time % n;
+//   for (let i = 0; i < n; i++) {
+//     Rotated[i] = array[(i + time) % n];
+//   }
+//   return Rotated;
 // }
 // let array = [1, 2, 3, 4, 5];
-// let result = Rotate(array,3);
-// console.log(result)
+// let result = Rotate(array, 2);
+// console.log(result);
 
 // ************************************* Rotate Right Array ******************
 // function RotateRight(array, times) {
-//     let Rotated = [];
-//     let n = array.length;
-//     for (let i = 0; i < n; i++){
-//         Rotated[(i+times)%n]=array[i]
-//     }
-//     return Rotated;
+//   let Rotated = [];
+//   let n = array.length;
+//   for (let i = 0; i < n; i++) {
+//     Rotated[(i + times) % n] = array[i];
+//   }
+//   return Rotated;
 // }
 // let array = [1, 2, 3, 4, 5];
-// let result = RotateRight(array,2)
-// console.log(result)
+// let result = RotateRight(array, 2);
+// console.log(result);
 
 // ************************************* Rotate Right String ******************
 // function Rotatestring(str, times) {
@@ -678,20 +702,20 @@
 // console.log(result)
 // **************************** Rearraging array in decending and accending *****************
 // function sort(array) {
-//     for (let i = 0; i < array.length; i++){
-//         for (let j = 0; j < array.length; j++){
-//             if (array[j] > array[j + 1]) {
-//                 let temp = array[j]
-//                 array[j] = array[j + 1];
-//                 array[j+1]=temp
-//             }
-//         }
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = 0; j < array.length; j++) {
+//       if (array[j] > array[j + 1]) {
+//         let temp = array[j];
+//         array[j] = array[j + 1];
+//         array[j + 1] = temp;
+//       }
 //     }
-//     return array;
+//   }
+//   return array;
 // }
 // let array = [2, 4, 1, 5, 3];
 // let result = sort(array);
-// console.log(result)
+// console.log(result);
 // ************************************* Median of array ***********************
 
 // function Median(array) {
@@ -703,33 +727,33 @@
 //   return mid;
 // }
 
-// let array = [20, 21,  22, 21, 53, 29, 90, 98, 78];
+// let array = [20, 21, 22, 21, 53, 29, 90, 98, 78];
 // let result = Median(array);
 // console.log(result);
 // **************** Add element in array **********
 // function AddElement(array) {
-//     let Element = [];
-//     for (let i = 0; i < array.length; i++){
-//         Element[i]= array[i]*2;
-//     }
-//     return Element;
+//   let Element = [];
+//   for (let i = 0; i < array.length; i++) {
+//     Element[i] = array[i] * 2;
+//   }
+//   return Element;
 // }
 // let array = [1, 2, 3, 4, 5];
-// let Result = AddElement(array)
-// console.log(Result)
+// let Result = AddElement(array);
+// console.log(Result);
 // **************************************************************************
 
 // function subset(str) {
-//     let char = "len";
-//     if (str.includes(char)) {
-//         return true;
-//     } else {
-//         return false
-//     }
+//   let char = "len";
+//   if (str.includes(char)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
 // }
-// let str = "javascript is great language"
+// let str = "javascript is great language";
 // let Result = subset(str);
-// console.log(Result)
+// console.log(Result);
 
 // *************************** Check Anagram string ***********************
 // function Anagram(str1, str2) {
@@ -745,28 +769,28 @@
 //       return false;
 //     }
 //     count[char]--;
-//     }
-//     return true;
+//   }
+//   return true;
 // }
 // let Result = Anagram("listen", "silent");
 // console.log(Result);
 
 // *********************************** space Remove *******************************************
 // function space(str) {
-//     let str2=""
-//     // let count ="";
-//     for (let char of str) {
-//         if (char !== " ") {
-//             str2 += char;
-//             // count++;
-//         }
+//   let str2 = "";
+//   let count = "";
+//   for (let char of str) {
+//     if (char !== " ") {
+//       str2 += char;
+//     } else {
+//       count++;
 //     }
-//     // return count;
-//     return str2;
+//   }
+//   return { str2, count };
 // }
-// let str = "a a s h i f"
-// let result = space(str)
-// console.log(result)
+// let str = "a a s h i f";
+// let result = space(str);
+// console.log(result);
 
 // ************************************ input from user *************************************
 // const prompt = require("prompt-sync")();
@@ -801,7 +825,7 @@
 // let result = Rotate(array, 3)
 // console.log(result)
 
-// ******************************Product of Array Except Self***************
+// ****************************** Product of Array Except Self***************
 // function Product(array) {
 //   let product = [];
 //   let value = 1;
@@ -867,16 +891,19 @@
 // console.log(findLength(str));
 // *************************** Delete specific element **************
 // function Delete(array, index) {
-//     let result=[]
+//   let result = [];
 //   if (index < 0 || index > array.length) {
-//     return array;
+//     return "Wrong Index";
+//   }
+//   for (let i = 0; i < array.length; i++) {
+//     if (i !== index) {
+//       result.push(array[i]);
 //     }
-//     for (let i = 0; i < array.length; i++){
-//         if (i !== index) {
-//             result.push(array[i]);
-//         }
-//     }
+//   }
+//   return result;
 // }
+// let arr = [1, 2, 3, 4, 5];
+// console.log(Delete(arr, 2));
 // ************************************************************
 // console.log(typeof(null))
 // console.log(typeof (undefined))
@@ -886,19 +913,19 @@
 
 // ********************************* Delete Element specific Position ************************
 // function specificPosition(array, postion) {
-//     let newArr = [];
-//     if (postion < 0|| postion >= array.length) {
-//        return "Index not Exists"
+//   let newArr = [];
+//   if (postion < 0 || postion >= array.length) {
+//     return "Index not Exists";
+//   }
+//   for (let i = 0; i < array.length; i++) {
+//     if (i !== postion) {
+//       newArr.push(array[i]);
 //     }
-//      for (let i = 0; i < array.length; i++) {
-//        if (i !== postion) {
-//          newArr.push(array[i]);
-//        }
-//      }
-//     return newArr
+//   }
+//   return newArr;
 // }
 // let array = [1, 2, 3, 4, 5];
-// let result = specificPosition(array,1);
+// let result = specificPosition(array, 1);
 // console.log(result);
 
 // ************* Intersection of Array *************
@@ -920,35 +947,35 @@
 // console.log(result)
 // *****************************Shift Zero *****************************
 // function shiftzero(array) {
-//     let result = [];
-//     for (let i = 0; i < array.length; i++){
-//         if (array[i] !== 0) {
-//             result.push(array[i])
-//         }
+//   let result = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] !== 0) {
+//       result.push(array[i]);
 //     }
-//     while (result.length < array.length) {
-//         result.push(0)
-//     }
-//     return result;
+//   }
+//   while (result.length < array.length) {
+//     result.push(0);
+//   }
+//   return result;
 // }
 // let array = [0, 1, 0, 2, 3, 0];
 // let result = shiftzero(array);
 // console.log(result);
 // ********************** maximum Product of two element ***********************
 // function MaxProduct(array) {
-//     let MaxProduct = 1;
+//   let MaxProduct = 1;
 
-//     for (let i = 0; i < array.length; i++){
-//         for (let j = i+1; j < array.length; j++){
-//             let product = array[i] * array[j]
-//             if (product > MaxProduct) {
-//                 MaxProduct = product;
-//             }
-//         }
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = i + 1; j < array.length; j++) {
+//       let product = array[i] * array[j];
+//       if (product > MaxProduct) {
+//         MaxProduct = product;
+//       }
 //     }
-//     return MaxProduct;
+//   }
+//   return MaxProduct;
 // }
-// let array = [1,5,7,9,3, 6];
+// let array = [1, 5, 7, 9, 3, 6];
 // let result = MaxProduct(array);
 // console.log(result);
 // ********************** manimum Product of two element ***********************
@@ -969,7 +996,7 @@
 // let result = MinProduct(array);
 // console.log(result);
 
-// ********************** maximum two of two element ***********************
+// ********************** maximum sum of two element ***********************
 // function MaxSum(array) {
 //     let sum = 0;
 //     let maxsum = 0;
@@ -1008,11 +1035,32 @@
 //     }
 //     // product = max1 * max2 * max3;
 //     sum = max1 + max2 + max3;
-       
+
 //     // return {product,max1,max2,max3}
 //     return sum;
-    
+
 // }
 // let array = [1, 9, 5, 8, 2, 4, 3, 12, 32];
 // let result = MaxProduct(array);
 // console.log("Sum of max three number:",result)
+
+// ************************************check prime number ****************
+// function isPrime(num) {
+//   if (num <= 1) return false; // 0 and 1 are not prime
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// // Example usage
+// let number = 15;
+// if (isPrime(number)) {
+//   console.log(`${number} is a prime`);
+// } else {
+//   console.log(`${number} is not a prime`);
+// }
+
+// console.log(Math.sqrt(15));
